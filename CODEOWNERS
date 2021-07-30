@@ -1,1 +1,3 @@
 *.txt @vanitirunagiri
+# automatically request Code owners for review 
+*  @vanitirunagiri @saibabaThurpati

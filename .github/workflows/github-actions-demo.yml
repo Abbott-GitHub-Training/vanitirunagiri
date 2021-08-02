@@ -1,19 +1,10 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+name: Github Actions Demo
+on: [push]
 jobs: 
- Explore-Github-Actions: 
- runs-on: ubuntu-latest
-  steps:
-   -run: echo " Bulid succesfull "
-   -run: echo " testing phase "
-   -run: echo " ${{ github.repository }} has been succesfully tested 
-   -run: echo "This job's status is ${{ job.status }}"
+  Explore-Github-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      -run: echo " Bulid succesfull "
+      -run: echo "testing phase"
+      -run: echo " ${{ github.repository }} has been succesfully tested 
+      -run: echo "This job's status is ${{ job.status }}"
